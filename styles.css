@@ -375,3 +375,48 @@ p{margin:0 0 18px; color:var(--muted)}
     font-size:34px;
   }
 }
+/* Technology & Emerging Industries */
+
+#results .technology-matters{
+  margin-top:52px;
+}
+
+#results .technology-heading{
+  max-width:760px;
+  margin-bottom:24px;
+}
+
+#results .technology-heading h3{
+  margin:0 0 12px;
+  color:var(--text);
+  font-size:clamp(28px,3vw,38px);
+  line-height:1.1;
+  letter-spacing:-.03em;
+}
+
+#results .technology-heading p{
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.7;
+}
+
+#results .technology-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+#results .technology-card{
+  min-height:340px;
+}
+
+@media (max-width:1000px){
+  #results .technology-grid{
+    grid-template-columns:1fr;
+  }
+
+  #results .technology-card{
+    min-height:auto;
+  }
+}
