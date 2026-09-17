@@ -94,6 +94,20 @@ ul{color:var(--muted)}
   background:#fff; border:1px solid var(--line); border-radius:22px; padding:26px;
   box-shadow:0 14px 36px rgba(15,23,42,.05)
 }
+.secondary-practice{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:12px 22px;
+  align-items:center;
+  margin-top:22px;
+  padding:20px 24px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:rgba(255,255,255,.72);
+}
+.secondary-practice strong{color:var(--text)}
+.secondary-practice span{color:var(--muted); font-size:14px; line-height:1.6}
+.secondary-practice .text-link{white-space:nowrap; font-size:14px}
 .section-intro{max-width:760px}
 .contact-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:start}
 .contact-lines{display:grid; gap:10px; font-size:1.05rem; color:var(--text)}
@@ -326,6 +340,15 @@ ul{color:var(--muted)}
   background:#fff;
   box-shadow:0 14px 36px rgba(15,23,42,.06);
 }
+.sidebar-headshot{
+  width:84px;
+  height:84px;
+  margin:0 0 18px;
+  border-radius:18px;
+  object-fit:cover;
+  object-position:center top;
+  border:1px solid var(--line);
+}
 .sticky-card{position:sticky; top:116px}
 .sidebar-links{display:grid; gap:9px; margin-top:20px}
 .sidebar-links a{color:var(--blue); font-weight:700}
@@ -451,7 +474,7 @@ ul{color:var(--muted)}
   #results .technology-grid{grid-template-columns:1fr}
   #results .technology-card{min-height:auto}
 }
-@media (max-width:900px){
+@media (max-width:1050px){
   .nav-links{display:none}
   .menu-toggle{display:inline-flex}
   body.menu-open .nav-links{
@@ -468,14 +491,17 @@ ul{color:var(--muted)}
     padding:18px;
     box-shadow:var(--shadow)
   }
-  .two-col,.about-grid,.contact-grid,.content-layout{grid-template-columns:1fr}
   .brand img{height:48px}
+}
+@media (max-width:900px){
+  .two-col,.about-grid,.contact-grid,.content-layout{grid-template-columns:1fr}
   #results .results-header{grid-template-columns:1fr; gap:18px}
   #results .results-grid{grid-template-columns:1fr}
   #results .crossborder-feature{grid-template-columns:1fr; gap:28px}
-  .content-sidebar{order:-1}
   .sticky-card{position:static}
   .matter-list{grid-template-columns:1fr}
+  .secondary-practice{grid-template-columns:1fr}
+  .secondary-practice .text-link{white-space:normal}
 }
 @media (max-width:650px){
   .container{width:min(100% - 28px,1180px)}
