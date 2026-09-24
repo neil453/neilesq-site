@@ -473,8 +473,8 @@ ul{color:var(--muted)}
 .profile-bio-section{padding-top:68px}
 .profile-bio-grid{
   display:grid;
-  grid-template-columns:minmax(260px,320px) minmax(0,1fr);
-  gap:64px;
+  grid-template-columns:minmax(220px,260px) minmax(0,1fr);
+  gap:48px;
   align-items:start;
 }
 .profile-photo-column{min-width:0}
@@ -506,7 +506,7 @@ ul{color:var(--muted)}
   font-size:14px;
   line-height:1.7;
 }
-.profile-bio-copy{max-width:800px}
+.profile-bio-copy{max-width:none}
 .profile-bio-copy h2{margin:0 0 24px}
 .profile-bio-copy p{
   margin-bottom:21px;
@@ -514,7 +514,10 @@ ul{color:var(--muted)}
   line-height:1.86;
   text-align:justify;
   text-justify:inter-word;
-  hyphens:auto;
+  hyphens:none;
+  -webkit-hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
 }
 .profile-matters-wrap{max-width:980px}
 .profile-matters-list{
